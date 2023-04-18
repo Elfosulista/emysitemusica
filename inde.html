@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Musica Para Emy</title>
+	<style>
+		body {
+			background-image: url('margaridasfundo2.jpg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			overflow-y: scroll;
+		}
+
+		.content {
+			margin: 100px auto;
+			width: 80%;
+			max-width: 800px;
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			position: relative;
+		}
+
+		.content::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-image: url('margaridasfundo2.jpg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			filter: blur(10px);
+			z-index: -1;
+		}
+		.content img {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<audio style="width: 400; display: block; margin: 0 auto;" controls>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+
+
+	<div class="content" style="text-align: center;">
+		<h1>Site dedicado a minha malvada Favorita</h1>
+		<p>Olá, meu amor! Fiz este site apenas para dedicar esta musiquinha a você. Você só precisa clicar no botão "play" ali em cima para escutá-la. Espero que goste. Não é nada demais, mas é de coração. Te amo, meu amor.</p>
+		<img src="Screenshot_1.png" alt="Imagem 1">
+	</div>
+</body>
+</html>
